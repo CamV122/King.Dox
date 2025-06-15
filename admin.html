@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+    header { background: #333; color: white; padding: 20px; font-size: 24px; }
+    .admin-panel { background: white; padding: 20px; margin: 20px auto; width: 60%; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    button { background: #007bff; color: white; padding: 10px; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+  <header>Admin Dashboard</header>
+
+  <div class="admin-panel">
+    <h2>Manage Users</h2>
+    <button onclick="manageUsers()">View Users</button>
+
+    <h2>Manage Purchases</h2>
+    <button onclick="managePurchases()">View Purchases</button>
+
+    <h2>License Keys</h2>
+    <button onclick="manageKeys()">Generate Keys</button>
+  </div>
+
+  <script>
+    function manageUsers() { alert("Redirecting to user management..."); }
+    function managePurchases() { alert("Redirecting to purchase tracking..."); }
+    function manageKeys() { alert("Generating license keys..."); }
+  </script>
+
+</body>
+</html>
